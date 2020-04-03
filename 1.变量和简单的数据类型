@@ -1,0 +1,19 @@
+#变量和简单的数据类型
+#运行hello_world.py时发生的情况
+文件末尾的.py代表是一个python程序，编辑器使用python解释器运行，解释读取整个程序，确定程序代码中每个单词的含义。例如，看到单词print时，解释器就会将括号中的内容打印到屏幕，而不会管括号中的内容。
+#变量
+每个变量都存储了一个值--与变量相关联的信息。在hello_world.py中把"Hello Python world!"赋值给变量message，然后print(message)还是会打印出Hello Python world！。添加变量导致解释器需要做更多工作，处理第一行代码时，将文本"Hello Python world!"与变量message关联起来，而处理第二行，它将与变量message关联的值打印到屏幕。
+再次修改hello_world.py，使其再打印一行信息，如下：
+message = "Hello Python world!" 
+print(message)
+message = "Hello Python Crash Course world!" 
+print(message)
+说明在Python程序中，可以随时修改变量的值，而Python将始终记录变量的最新值。
+#变量的命令和使用
+在python中使用变量时，要遵守一些规则和指南。以下是有关变量的规则：
+ 变量名只能包含字母、数字和下划线。变量名可以字母或下划线打头，但不能以数字打头，例如，可将变量命名为message_1，但不能将其命名为1_message。
+ 变量名不能包含空格，但可使用下划线来分隔其中的单词。例如，变量名greeting_message可行，但变量名greeting message会引发错误。
+ 不要将Python关键字和函数名用作变量名，即不要使用Python保留用于特殊用途的单词。
+ 变量名应既简短又具有描述性。例如，name比n好，student_name比s_n好，name_length比length_of_persons_name好。
+ 慎用小写字母l和大写字母O，因为它们可能被人错看成数字1和0。
+注意 就目前而言，应使用小写的Python变量名。在变量名中使用大写字母虽然不会导致错误，但避免使用大写字母是个不错的主意。
